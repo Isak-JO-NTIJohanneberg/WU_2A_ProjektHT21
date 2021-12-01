@@ -1,6 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+background-color: beige;
+}
+
+
 p{
 
 display: inline;
+}
+
+#wrapper{
+    
+    display: grid;
+
+    height: 250vh;
+
+    grid-template-columns: 1fr 20vw;
+    grid-template-rows: 80px 1fr 1fr 80px;
+   
+
+grid-template-areas: 
+"my"
+"ma"
+"ma"
+"fo"
+;
+
+}
+
+
+#navmeny{
+grid-area: my;
+
+}
+
+
+
+
+
+#open-bild{
+    /*grid-area: ob;*/
+
+    width: 20vw;
+    height: 100vh;
+
+    background-color: aqua;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+#main-art{
+grid-area: ma;
+
+background-color: salmon;
+}
+
+footer{
+
+grid-area: fo;
+background-color: burlywood;
+
+
+}
+
+
+#main-art{
+
+    display: grid;
+
+    height: 100;
+
+    grid-template-columns: 1fr fr 1fr;
+    grid-template-rows: 1fr 1fr 1 fr;
+   
+
+grid-template-areas: 
+"ra ra b1"
+"b2 hm hm"
+"dm dm b3"
+;
+
+padding: 20px;
+
+}
+
+#rest{
+    grid-area: ra;
+}
+
+#husmann{
+    grid-area:hm;
+}
+
+#dammsugare{
+    grid-area: dm;
+}
+
+article{
+
+padding: 10px;
+
+}
+
+
+nav{
+display: flex;
+
+justify-content: center;
+
+justify-content: space-evenly;
+
+align-items: center;
+
 
 
 }

@@ -37,10 +37,62 @@ grid-template-areas:
 #navmeny{
 grid-area: my;
 
+margin-right: 0px;
+    padding: 0;
+    border: 0;
+
 }
 
+nav{
+
+    display: flex;
+    
+    align-items: center;
+    
+    /*background-color: aqua;*/
+    
+    width: 80vw;
+    
+    justify-content: space-between;
+    
+    margin: 0;
+    margin-right: 0px;
+    padding: 0;
+    border: 0;
+    
+    
+    }
+    
+    
+    ul{
+    
+    list-style: none;
+    
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+    width: 80vw;
+    
+    margin-right: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    }
 
 
+.link{
+display: flex;
+justify-content: center;
+border-radius: 20px;
+border: 0;
+height: 60px;
+width: 120px;
+align-items: center;
+background-color:wheat;
+
+}
 
 
 #open-bild{

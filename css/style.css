@@ -1,9 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-background-color: beige;
+/*background-color: beige;*/
 
-background-image: url("img/resturangback.jpg");
+/*background-image: url(/img/resturangback.jpg);*/
 }
 
 
@@ -18,7 +18,11 @@ display: inline;
     
     display: grid;
 
-    height: 250vh;
+    /*: 250vh;*/
+   /* height: maxmin(250vh, fit-content);*/
+    
+   /* height: 200vh; */
+  /*  fit-content;*/
 
     grid-template-columns: 1fr 20vw;
     grid-template-rows: 80px minmax(300px, 1fr) minmax(300px, 1fr) 80px;
@@ -37,9 +41,13 @@ grid-template-areas:
 #navmeny{
 grid-area: my;
 
-margin-right: 0px;
+background-color: beige;
+/*text-decoration: none;*/
+
+/*margin-right: 0px;
     padding: 0;
     border: 0;
+    margin: 0;*/
 
 }
 
@@ -111,11 +119,7 @@ background-color:wheat;
 
 
 
-#main-art{
-grid-area: ma;
 
-background-color: salmon;
-}
 
 footer{
 
@@ -128,12 +132,25 @@ background-color: burlywood;
 
 #main-art{
 
+    grid-area: ma;
+
+/*background-color: salmon;*/
+
+
+background: url(../img/bakgrund-redigerad.jpg);
+
+background-size: cover;
+
     display: grid;
 
     height: 100;
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 30rem 30rem min-content;
+   /* grid-template-rows: minmax(min-content, 30%) minmax(min-content, 30%) min-content; */
+
+   color: whitesmoke;
+
    
 
 grid-template-areas: 
@@ -195,7 +212,7 @@ align-items: center;
 
 #bild_rulle{
     grid-area:b3;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
     }
@@ -203,3 +220,21 @@ align-items: center;
     li {
         list-style-type: none;
     }
+/*
+
+    <style>
+    body {
+      background-image: url('/img/resturang.jpg');
+    }
+    </style>
+
+    */
+
+.brodtxt{
+font-size: 1.4rem;
+}
+
+h2{
+
+    font-size: 1.7rem;
+}

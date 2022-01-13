@@ -14,31 +14,33 @@
 <body>
 
     
+
     
     <div id=wrapper>
 
     
 
          <header>
-
+    
         </header>
+
 
         <nav id="navmeny">
                 <ul id="nav">
-                        <a class="lank" href="https://dackmagasinet.se/dack/">
-                        <li class="link">Däck</li>
+                        <a class="lank" href="matmeny.html">
+                        <li class="link">Meny</li>
                         </a>
 
-                        <a class="lank" href="https://dackmagasinet.se/bilverkstad/">
-                        <li class="link">Service</li>
+                        <a class="lank" href="omoss.html">
+                        <li class="link">Om oss</li>
                           </a>
                           
                         <a class="lank" href="https://codepen.io/hjdesigner/full/jvyJdX">
                         <li class="link">Kaffe </li>
                     </a>
 
-                        <a class="lank" href="kontakt.html">
-                        <li class="link">Kontakta oss</li>
+                        <a class="lank" href="finns_ej.html">
+                        <li class="link">Bokning</li>
                     </a>
                     
                     <a class="lank" href="kontakt.html">
@@ -78,7 +80,11 @@
 
             <articleid id="bild">
                 bildspel på käket
-            
+                
+                <img class="mySlides" src="img/meatballs.jpg">
+                <img class="mySlides" src="img/resturangback.jpg">
+                <img class="mySlides" src="img_mountains.jpg">
+                <img class="mySlides" src="img_forest.jpg">
             </article>
 
         </section>
@@ -86,40 +92,89 @@
         <section id="main-art">
 
             <article class="art" id="rest">
-                Resturangen
+               
+
+                <h2>
+                        Resturangen
+                   </h2>
+
+                   
+                   <p class="brodtxt">
+                        Resturangen
+                    
+                    </p>
 
             </article>
 
             <article class="art" id="husmann">
-                Husmannskost
+                 <h2>
+                      Husmannskost
+                 </h2>
+                 <p class="brodtxt">
+                        Husmannskost
+
+                 </p>
+               
                 </article>
 
             <article class="art" id="dammsugare">
-                Dammsugare
+                <h2>
+                        Dammsugare
+                </h2>
                 <br>
                 <br>
-                <p>
+               
+                <p class="brodtxt">
+                
                     Som ni kanske kan gissa utifrån vårt namn är vi här på Husmannskost och damsugare specialister på just dammsugare.
                     Inte de dammsugare som man använder för att damsuga utan bakverket dammsugare även kännt som: punchrulle, 150-ohmare eller arraksrulle, kärt barn har många namn.
-
-                </p>
+            
+                   
+                    
+                    </p>
                  </article>
 
              <img id="bild_husmann" src="img/meatballs.jpg" alt="meatballs">
              <img id="bild_rest" src="img/resturang.jpg" alt="resturant">
-             <img id="bild_rulle" src="img/150ohmare.jpg" alt="punch-roll">
+             <img id="bild_rulle" src="img/dammsugare.png" alt="punch-roll">
             
 
         </section>
 
         <footer>
-            motorvägen 69
-            hittepåköping
+            
+                <li>
+                    Besöksadress: <br>  motorvägen 69
+                    hittepåköping
+                </li>
+                    <li>
+                        oansvarlig utgivare: Isak
+
+                    </li>
+            
+        
 
         </footer>
         
         </div>
 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+/* Man kan skriva skriptet i en egen .js fil. Men med tanke på hur lite det är, så tycker jag att det kan det stå i html-dokumentet.
+</script>
 
 
 </body>

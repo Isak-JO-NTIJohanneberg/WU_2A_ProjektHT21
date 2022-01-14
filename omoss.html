@@ -1,0 +1,193 @@
+<!--todo-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Husmannskost och Dammsugare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+<div id=wrapper>
+
+
+
+
+    <nav id="navmeny">
+            <a class="lank" href="index.html">
+                    <p class="link">Hem</p>
+            </a>
+
+            <a class="lank" href="hitta_hit.html">
+                <p class="link">Hitta Hit</p>
+            </a>
+                
+            <a class="lank" href="finns_ej.html">
+                    <p class="link">Lunch-Meny</p>
+            </a>
+
+            <a class="lank" href="finns_ej.html">
+                <p class="link">Bokning</p>
+            </a>
+        
+        <a class="lank" href="omoss.html">
+                <p class="link">Om oss</p>
+            </a>
+
+    
+    </nav>
+
+    <section id="open-bild">
+
+        <header>
+
+            <div id="logga"> <img id="loggbild" src="img/Logga2.jpg" alt="Logga">
+            </div>
+                    
+                    
+            </header>
+
+        <div class="open">
+        
+            <h4>öppettider:</h4>
+            <ul class="open">
+
+            <li>
+                Måndagar: 11-13
+            </li>
+            <li>
+                 Tisdagar: 11-13
+            </li>
+            <li>
+                Onsdagar: 8-16
+            </li>
+            <li>
+                Torsdagar: 12-18
+            </li>
+            <li>
+                Fredagar: 15-22
+            </li>
+            <li>
+                Lördagar: 15-22
+            </li>
+            <li>
+                Söndagar: Stängt
+            </li>
+        </ul>
+        </div>
+        <br><br>
+
+        <div id="bildspel">
+            
+            <img class="mySlides" src="img/meatballs.jpg" alt="meatballs">
+            <img class="mySlides" src="img/Logga.jpg" alt="loggan">
+            <img class="mySlides" src="img/biff.jpg" alt="En god köttbit">
+            <img class="mySlides" src="img/Köttbullar_sallad.jpg" alt="köttbullar">
+        </div>
+
+    </section>
+
+    <section id="main-art">
+
+        <article class="art" id="rest">
+            
+
+            <h2>
+                    Kenneth
+                </h2>
+
+                
+                <p class="brodtxt">
+                    Kenneth heter jag ock är ägare av resturangen.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint aspernatur optio accusamus ullam, libero laboriosam vitae perferendis nihil distinctio possimus, qui a, natus iure quaerat ducimus velit veniam aliquid quibusdam accusantium cupiditate eligendi explicabo. Officia magnam quis debitis nesciunt tempore repellendus quaerat velit fuga, sapiente incidunt commodi perspiciatis voluptates.
+            
+                
+                </p>
+
+        </article>
+
+        <article class="art" id="husmann">
+                <h2>
+                  Nils
+
+                </h2>
+                <p class="brodtxt">
+                    Nills är jag och jag är kock och köksledare samt specialist inom klassisk svenska husmannskost.
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quo amet itaque cumque nesciunt iste sunt! Repellendus, voluptas, praesentium, dolorum accusantium deleniti et odit odio nobis ad eligendi cum eius.
+                </p>
+            
+            </article>
+
+        <article class="art" id="dammsugare">
+            <h2>
+                   Ingrid
+            </h2>
+            <br>
+            <br>
+            
+            <p class="brodtxt">
+            
+                Konditor och specialist inom dammsugare, samt flerfalldig mästare inom.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat amet consequatur assumenda aliquam veritatis similique repellendus recusandae neque incidunt nemo, hic perspiciatis expedita facere pariatur saepe cumque obcaecati. Incidunt.
+                
+                </p>
+                </article>
+
+            <img id="bild_rest" src="img/kenneth.jpg" alt="Kenneth">
+            <img id="bild_husmann" src="img/nils.jpg" alt="Nils">
+            <img id="bild_rulle" src="img/ingrid.jpg" alt="Ingrid">
+        
+
+    </section>
+
+    <footer class="fot">
+            <ul class="fot">
+            <li>
+                Besöksadress: <br>  motorvägen 79
+                hittepåköping
+            </li>
+            <li>
+                oansvarlig utgivare: Isak
+
+            </li>
+
+            </ul>
+        
+    
+
+    </footer>
+    
+    </div>
+
+<script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+    // Man skulle kunna lägga skriptet i en separat .js fil men eftersom att det är ganska lite i detta fallet, tycker jag inte att det är nödvändigt.
+        </script>
+
+
+
+</body>
+</html>
+

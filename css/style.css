@@ -1,82 +1,53 @@
 body{
     margin: 0;
     padding: 0;
-/*background-color: beige;*/
-
-/*background-image: url(/img/resturangback.jpg);*/
-color: whitesmoke;
+    color: whitesmoke;
 }
 
 
 p{
-
-display: inline;
-
-
+    display: inline;
 }
 
 #wrapper{
     
     display: grid;
-
-    /*: 250vh;*/
-   /* height: maxmin(250vh, fit-content);*/
-    
-   /* height: 200vh; */
-  /*  fit-content;*/
-
     grid-template-columns: 1fr 20vw;
-    grid-template-rows: 80px 80px minmax(300px, 1fr) minmax(300px, 1fr) 80px;
+    grid-template-rows: 80px minmax(300px, 1fr) minmax(300px, 1fr) 80px;
    
-
-grid-template-areas: 
-"lg"
-"my"
-"ma"
-"ma"
-"fo"
-;
-
+    grid-template-areas: 
+    "my"
+    "ma"
+    "ma"
+    "fo"
+    ;
 }
 
 
 #navmeny{
-grid-area: my;
-
-background-color: beige;
-/*text-decoration: none;*/
-
-/*margin-right: 0px;
-    padding: 0;
-    border: 0;
-    margin: 0;*/
+    grid-area: my;
+    background-color: beige;
 
 }
 
 #logga{
-display: flex;
-
-align-items: center;
-justify-content: center;
-background-color: beige;
-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    height: 80px;
 
 }
 #loggbild{
-height: 80px;
-width:auto;
-
+    height: 80px;
+    width:auto;
 
 }
 
 nav{
 
     display: flex;
-    
-    align-items: center;
-    
-    /*background-color: aqua;*/
-    
+    align-items: center;   
     width: 80vw;
     
     justify-content: space-between;
@@ -86,11 +57,10 @@ nav{
     padding: 0;
     border: 0;
     
+}
     
-    }
     
-    
-    ul{
+ul{
     
     list-style: none;
     
@@ -109,36 +79,35 @@ nav{
 
 
 .link{
-display: flex;
-justify-content: center;
-border-radius: 20px;
-border: 0;
-height: 60px;
-width: 120px;
-align-items: center;
-background-color:wheat;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 0;
+    height: 60px;
+    width: 120px;
+    align-items: center;
+    background-color:wheat;
+
+
+}
+.lank{
+
+    text-decoration: none;
+}
+
+
+.open{
+    text-align: center;
+    display: inline-block;
+    width: 20vw;
+
 
 }
 
-/*
-#open{
-
-display: flex;
-align-items: center;
-display: block;
-
-}
-*/
 #open-bild{
-    /*grid-area: ob;*/
-
     width: 20vw;
     height: 100vh;
-
-
-
-text-align: center;
-
+    text-align: center;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -148,62 +117,53 @@ text-align: center;
 
 #bildspel{
 
-width: 20vw;
-height: 50vh;
+    width: 20vw;
+    height: 50vh;
 
 }
 
 .mySlides{
 
     object-fit: fill;
-
-
 }
 
 
 
-footer{
+.fot{
 
 grid-area: fo;
 background-color: burlywood;
 color: darkblue;
-padding-left: 30px;
-padding-top: 10px;
+padding-left: 20px;
+padding-top: 5px;
+display: inline-block;
 
 }
 
 
 #main-art{
 
+    width: 80vw;
     grid-area: ma;
-
-/*background-color: salmon;*/
-
-
-background: url(../img/bakgrund-redigerad.jpg);
-
-background-size: cover;
-
+    background: url(../img/bakgrund-redigerad.jpg);
+    background-size: cover;
     display: grid;
-
-    height: 100;
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30rem 30rem min-content;
-   /* grid-template-rows: minmax(min-content, 30%) minmax(min-content, 30%) min-content; */
-
    color: whitesmoke;
 
    
 
-grid-template-areas: 
-"ra ra b1"
-"b2 hm hm"
-"dm dm b3"
-;
+    grid-template-areas: 
+    "ra ra b1"
+    "b2 hm hm"
+    "dm dm b3"
+    ;
 
-padding: 20px;
-
+    padding: 20px;
+    border: 0px;
+    margin: 0px;
 }
 
 #rest{
@@ -227,21 +187,16 @@ padding: 20px;
 
 article{
 
-padding: 10px;
+    padding: 10px;
 
 }
 
 
 nav{
-display: flex;
-
-justify-content: center;
-
-justify-content: space-evenly;
-
-align-items: center;
-
-
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
@@ -260,18 +215,9 @@ align-items: center;
     height: 100%;
     }
 
-    li {
-        list-style-type: none;
-    }
-/*
-
-    <style>
-    body {
-      background-image: url('/img/resturang.jpg');
-    }
-    </style>
-
-    */
+li {
+    list-style-type: none;
+}
 
 .brodtxt{
 font-size: 1.4rem;
@@ -280,4 +226,20 @@ font-size: 1.4rem;
 h2{
 
     font-size: 1.7rem;
+}
+
+#finnsej:hover{
+cursor: not-allowed;
+}
+
+
+#finnsej2:hover{
+cursor: not-allowed;
+}
+
+#karta{
+display: flex;
+justify-content: center;
+display: block;
+
 }

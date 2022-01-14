@@ -21,7 +21,11 @@
     
 
          <header>
-    
+
+               <div id="logga"> <img id="loggbild" src="img/Logga2.jpg" alt="Logga">
+               </div>
+                
+               
         </header>
 
 
@@ -53,7 +57,7 @@
 
         <section id="open-bild">
 
-            <article id="open">
+            <div id="open">
                 <h4>öppettider:</h4>
                 <li>
                     Måndagar: 11-13
@@ -76,16 +80,16 @@
                 <li>
                        Söndagar: Stängt
                     </li>
-            </article>
+            </div>
+            <br><br>
 
-            <articleid id="bild">
-                bildspel på käket
-                
-                <img class="mySlides" src="img/meatballs.jpg">
-                <img class="mySlides" src="img/resturangback.jpg">
-                <img class="mySlides" src="img_mountains.jpg">
-                <img class="mySlides" src="img_forest.jpg">
-            </article>
+            <div id="bildspel">
+             
+                <img class="mySlides" src="img/meatballs.jpg" alt="meatballs">
+                <img class="mySlides" src="img/Logga.jpg" alt="loggan">
+                <img class="mySlides" src="img/biff.jpg" alt="En god köttbit">
+                <img class="mySlides" src="img/Köttbullar_sallad.jpg" alt="köttbullar">
+            </div>
 
         </section>
 
@@ -100,7 +104,9 @@
 
                    
                    <p class="brodtxt">
-                        Resturangen
+                        Resturangen är 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, facilis! Sint dicta, dolores sequi odio voluptate ut a nostrum in dignissimos repellendus explicabo molestiae. Suscipit aut ducimus, minima quam inventore numquam incidunt ipsa dolorem porro, aspernatur tempore sit aperiam tenetur laborum veniam facere necessitatibus optio vero cumque placeat explicabo. Expedita illum sed repudiandae molestiae veniam labore! Nobis, optio? Quisquam, provident.
+                
                     
                     </p>
 
@@ -109,9 +115,11 @@
             <article class="art" id="husmann">
                  <h2>
                       Husmannskost
+
                  </h2>
                  <p class="brodtxt">
                         Husmannskost
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius eum commodi vel nobis ut. Ipsum earum sit nihil esse tenetur sint incidunt velit possimus est ad commodi quis repellendus aperiam neque necessitatibus dignissimos nulla accusantium inventore eligendi, deleniti quod illum quos libero? A, laudantium. Iure dolor deserunt ut distinctio molestias adipisci harum reiciendis? Beatae similique quam maxime nulla ratione molestiae necessitatibus animi veritatis quod magni unde magnam, cumque nemo dolore.
 
                  </p>
                
@@ -159,22 +167,24 @@
         </div>
 
 <script>
-var myIndex = 0;
-carousel();
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-/* Man kan skriva skriptet i en egen .js fil. Men med tanke på hur lite det är, så tycker jag att det kan det stå i html-dokumentet.
-</script>
+    // Man skulle kunna lägga skriptet i en separat .js fil men eftersom att det är ganska lite i detta fallet, tycker jag inte att det är nödvändigt.
+        </script>
+
 
 
 </body>

@@ -4,6 +4,7 @@ body{
 /*background-color: beige;*/
 
 /*background-image: url(/img/resturangback.jpg);*/
+color: whitesmoke;
 }
 
 
@@ -25,10 +26,11 @@ display: inline;
   /*  fit-content;*/
 
     grid-template-columns: 1fr 20vw;
-    grid-template-rows: 80px minmax(300px, 1fr) minmax(300px, 1fr) 80px;
+    grid-template-rows: 80px 80px minmax(300px, 1fr) minmax(300px, 1fr) 80px;
    
 
 grid-template-areas: 
+"lg"
 "my"
 "ma"
 "ma"
@@ -48,6 +50,22 @@ background-color: beige;
     padding: 0;
     border: 0;
     margin: 0;*/
+
+}
+
+#logga{
+display: flex;
+
+align-items: center;
+justify-content: center;
+background-color: beige;
+height: 80px;
+
+}
+#loggbild{
+height: 80px;
+width:auto;
+
 
 }
 
@@ -102,22 +120,45 @@ background-color:wheat;
 
 }
 
+/*
+#open{
 
+display: flex;
+align-items: center;
+display: block;
+
+}
+*/
 #open-bild{
     /*grid-area: ob;*/
 
     width: 20vw;
     height: 100vh;
 
-    background-color: aqua;
+
+
+text-align: center;
 
     position: fixed;
     bottom: 0;
     right: 0;
+
+    background-image: url(../img/bakgrund-redigerad.jpg);
 }
 
+#bildspel{
+
+width: 20vw;
+height: 50vh;
+
+}
+
+.mySlides{
+
+    object-fit: fill;
 
 
+}
 
 
 
@@ -125,7 +166,9 @@ footer{
 
 grid-area: fo;
 background-color: burlywood;
-
+color: darkblue;
+padding-left: 30px;
+padding-top: 10px;
 
 }
 
